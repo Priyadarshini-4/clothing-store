@@ -1,0 +1,125 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* ================== Product List ================== */
+.product-list h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.details-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #007bff;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.details-btn:hover {
+  background: #0056b3;
+}
+
+/* ================== Product Details ================== */
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .product-details {
+    flex-direction: row;
+  }
+}
+
+/* Gallery of images */
+.images-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+
+.images-gallery img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.images-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Product details info */
+.details-info {
+  max-width: 600px;
+}
+
+.details-info h1 {
+  margin-bottom: 10px;
+}
+
+.discount {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 3px 8px;
+  background: #d4f4dd;
+  color: #0a923d;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 12px;
+  background: #6c757d;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  background: #5a6268;
+}
